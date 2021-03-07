@@ -5,7 +5,7 @@
 
 React\
 Redux\
-CSS\
+CSS
 
 # TO make http request to get data from API and display them in cards using Grid layout
 
