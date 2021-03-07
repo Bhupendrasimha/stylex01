@@ -57,7 +57,7 @@ class Navbar extends React.Component {
       <>
         <NavBar>
           <Logo src="https://www.stylex.in/img/logo.png" />
-          <Button onClick={this.handleData}>Get Users Data</Button>
+          <Button onClick={this.handleData}>Get Users</Button>
         </NavBar>
         <Wrapper>
             {this.state.isLoading?<Loader/>:null}
