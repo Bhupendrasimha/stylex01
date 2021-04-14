@@ -35,7 +35,7 @@ jobs:
 
     - name: Build
       run: |
-            echo "/userdetails" >> $GITHUB_PATH
+            cd userdetails
             npm run build
    
 
