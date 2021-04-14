@@ -32,7 +32,7 @@ jobs:
       run: npm install
 
     - name: Run the tests and generate coverage report
-      run: npm test 
+      run: npm test -- --coverage
 
       
     - name: Upload coverage to Codecov
@@ -44,8 +44,8 @@ jobs:
       
     - name: Deploy
       run: |
-        git config --global user.name $Bhupendra
-        git config --global user.email $bhupendra@gmail.com
+        git config --global user.name Bhupendra
+        git config --global user.email bhupendra@gmail.com
         git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
       env:
