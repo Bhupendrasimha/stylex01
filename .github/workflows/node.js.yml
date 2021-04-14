@@ -20,8 +20,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - run: |
-            echo "/userdetails" >> $GITHUB_PATH
+    
     - name: Checkout repository
       uses: actions/checkout@v2
 
@@ -35,7 +34,9 @@ jobs:
 
 
     - name: Build
-      run: npm run build
+      run: |
+            echo "/userdetails" >> $GITHUB_PATH
+            npm run build
    
 
 
